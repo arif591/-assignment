@@ -9,6 +9,9 @@ body {
 section {
     padding: 2rem 8%;
 }
+.flex {
+    display: flex;
+}
 .btn-primary {
     display: inline-block;
     text-decoration: none;
@@ -61,7 +64,6 @@ section {
 /* header start */
 header {
     padding: 1rem 5%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
@@ -70,18 +72,28 @@ header {
     top: 0;
     left: 0;
 }
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: #363535;
+    margin: 10px 0;
+}
 nav ul {
     list-style: none;
+    margin: 0;
 }
 nav li {
     display: inline-block;
     margin-left: 2rem;
     cursor: pointer;
 }
+nav li:hover,a:hover {
+    color: #1e44f0;
+}
 nav a {
     text-decoration: none;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #000;
 }
 nav i.fas {
@@ -94,7 +106,6 @@ nav i.fas {
 .home {
     background-color: #1e44f01a;
     padding: 4rem 8%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -111,6 +122,10 @@ nav i.fas {
     font-weight: 400;
     line-height: 24px;
     margin: 1.7rem 0;
+}
+.home-image:hover img {
+    transform: rotate(5deg) scale(1.1);
+    transition: .3s ease-in;
 }
 /* home end */
 
@@ -153,6 +168,59 @@ nav i.fas {
 /* collections end */
 
 
+/* bonus start */
+.cta {
+    padding: 4rem 8%;
+    background: url(images/pic-8.jpg) no-repeat;
+    background-size: cover;
+}
+.cta-title {
+    color: #fff;
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 0.7rem;
+    text-transform: capitalize;
+    margin: 0 0 1.5rem;
+}
+.cta-title span {
+    color: #ffffff70;
+}
+.cta textarea,input:not(:last-child) {
+    display: block;
+    width: 650px;
+    padding: 14px 10px;
+    margin-bottom: 2rem;
+    background-color: #ffffff10;
+    border: 2px solid #ffffff;
+    outline: none;
+    color: #fff;
+    font-style: italic;
+}
+::placeholder {
+    color: #fff;
+}
+.submit-btn {
+    display: inline-block;
+    background-color: #ffffff10;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    padding: 1rem 3rem;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background-color: #1e44f0;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: .3s;
+}
+/* bonus end */
+
+
 /* footer start */
 footer {
     padding: 2rem 0;
@@ -179,3 +247,12 @@ footer h2 {
     color: #1e44f0;
 }
 /* footer end */
+
+
+/*  tablet device start */
+/*  tablet devices end */
+
+
+/*  mobile device start */
+/*  mobile devices end */
+

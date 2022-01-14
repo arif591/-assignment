@@ -22,10 +22,8 @@
 
 <body>
     <!-- header start -->
-    <header>
-        <div class="logo">
-            <h2>Influencer products</h2>
-        </div>
+    <header class="header flex">
+        <h2 class="logo">Influencer products</h2>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -40,7 +38,7 @@
     <!-- header end -->
 
     <!-- home start -->
-    <section class="home">
+    <section class="home flex">
         <div class="home-text">
             <h1>Start your Journey as Influencer</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem vestibulum sed scelerisque eros. Lectus
@@ -53,7 +51,7 @@
     </section>
     <!-- home end -->
 
-    <!-- popular collections start -->
+    <!-- popular-collection start -->
     <section class="popular-collection">
         <h1 class="section-title">Popular Collection</h1>
         <div class="collections">
@@ -204,10 +202,20 @@
         </div>
         <a href="#" class="btn-secondery">See More<i class="fas fa-arrow-right"></i></a>
     </section>
-    <!-- popular collections end -->
+    <!-- popular-collection end -->
 
-    <!-- BONUS start -->
-    <!-- BONUS end -->
+    <!-- bonus start -->
+    <section class="cta">
+        <h1 class="cta-title">get <span>in</span> touch</h1>
+        <form action="#">
+            <input type="text" placeholder="FULL NAME">
+            <input type="email" name="email" id="email" placeholder="EMAIL">
+            <input type="text" name="number" id="number" placeholder="PHONE">
+            <textarea rows="4" cols="50" name="comment" form="usrform">MESSAGE</textarea>
+            <input type="submit" value="SEND" class="submit-btn">
+        </form>
+    </section>
+    <!-- bonus end -->
 
     <!-- footer start -->
     <footer>
