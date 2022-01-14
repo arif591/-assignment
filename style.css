@@ -154,4 +154,28 @@ nav i.fas {
 
 
 /* footer start */
+footer {
+    padding: 2rem 0;
+    background-color: #1e44f0;
+    color: #fff;
+    text-align: center;
+}
+footer h2 {
+    font-size: 24px;
+}
+.social-links a {
+    color: #fff;
+}
+.social-links i.fab {
+    font-size: 24px;
+    padding: 14px;
+    background-color: #6b6a6a;
+    border-radius: 100px;
+    margin: 5px;
+    transition: .3s ease-in;
+}
+.social-links i.fab:hover {
+    background-color: #fff;
+    color: #1e44f0;
+}
 /* footer end */
