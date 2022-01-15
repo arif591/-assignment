@@ -243,8 +243,47 @@ footer p {
 /* footer end */
 
 
-/* Small devices (landscape phones, 480px and up) */
-@media (min-width: 480px) and (max-width: 768px) {
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    html {
+        font-size: 37%;
+    }
+    .logo {
+        font-size: 3rem;
+    }
+    nav {
+        display: none;
+    }
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .home-image img {
+        width: 90%;
+    }
+    .popular-collection {
+        justify-content: center;
+    }
+    .collections {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta {
+        text-align: center;
+    }
+    .cta form input:not(:last-child),.cta form textarea {
+        width: 35rem;
+        margin: 0 auto 2rem;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
     html {
         font-size: 40%;
     }
@@ -278,7 +317,6 @@ footer p {
     .cta form input,textarea {
         margin: 0 auto 4rem;
     }
-
     footer h2 {
         font-size: 4rem;
         letter-spacing: .5rem;
@@ -344,7 +382,3 @@ footer p {
         padding: 3rem 4rem;
     }
 }
-
-
-
-
