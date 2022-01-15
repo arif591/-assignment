@@ -53,8 +53,6 @@ section {
 /* utilities end */
 
 
-
-
 /* header start */
 header {
     padding: 1.6rem 5rem;
@@ -95,7 +93,6 @@ nav i.fas {
 }
 /* header end */
 
-
 /* home start */
 .home {
     background-color: #1e44f01a;
@@ -123,7 +120,6 @@ nav i.fas {
 }
 /* home end */
 
-
 /* collections start */
 .collections {
     display: grid;
@@ -131,10 +127,11 @@ nav i.fas {
     grid-gap: 3.2rem;
     justify-content: center;
 }
-
 .collection {
     padding: 1.6rem;
     box-shadow: 0 0 1.5rem rgba(128, 128, 128, 0.411);
+    border-radius: 1rem;
+    cursor: pointer;
 }
 .collection h3 {
     font-size: 2.8rem;
@@ -162,8 +159,7 @@ nav i.fas {
 }
 /* collections end */
 
-
-/* bonus start */
+/* CTA start */
 .cta {
     padding: 6.4rem 5rem;
     background: url(images/pic-8.jpg) no-repeat;
@@ -179,7 +175,7 @@ nav i.fas {
     margin: 0 0 2.4rem;
 }
 .cta-title span {
-    color: #ffffff70;
+    color: #cde8f57a;
 }
 .cta textarea,input:not(:last-child) {
     display: block;
@@ -213,8 +209,7 @@ nav i.fas {
     border: .2rem solid #ffffff;
     transition: .3s;
 }
-/* bonus end */
-
+/* CTA end */
 
 /* footer start */
 footer {
@@ -225,6 +220,7 @@ footer {
 }
 footer h2 {
     font-size: 2.4rem;
+    letter-spacing: .5rem;
 }
 footer p {
     font-size: 1.4rem;
@@ -247,10 +243,10 @@ footer p {
 /* footer end */
 
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 360px) and (max-width: 768px) {
+/* Small devices (landscape phones, 480px and up) */
+@media (min-width: 480px) and (max-width: 768px) {
     html {
-        font-size: 30%;
+        font-size: 40%;
     }
     .logo {
         font-size: 4rem;
@@ -285,16 +281,17 @@ footer p {
 
     footer h2 {
         font-size: 4rem;
-        letter-spacing: .7rem;
+        letter-spacing: .5rem;
         margin: 0 auto 2rem;
     }
     footer p {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     footer a {
-        margin: 1rem;
+        margin: .7rem;
     }
 }
+
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 992px) {
@@ -308,7 +305,21 @@ footer p {
         width: 100%;
     }
     .collections {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2,50rem);
+    }
+    .collection img {
+        width: 100%;
+    }
+    footer h2 {
+        font-size: 3rem;
+        letter-spacing: .4rem;
+        margin: 0 auto 2rem;
+    }
+    footer p {
+        font-size: 1.5rem;
+    }
+    footer a {
+        margin: .5rem;
     }
 }
 
