@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+html {
+    font-size: 62.5%;
+}
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
 
 /* utilities start */
 section {
-    padding: 2rem 8%;
+    padding: 3.2rem 10rem;
 }
 .flex {
     display: flex;
@@ -17,15 +21,15 @@ section {
     text-decoration: none;
     background-color: #1e44f0;
     color: #fff;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
-    padding: 1rem 3rem;
-    border: 2px solid #1e44f0;
-    border-radius: 100px;
+    padding: 1.6rem 4.8rem;
+    border: .2rem solid #1e44f0;
+    border-radius: 10rem;
     transition: .3s;
 }
 .btn-primary .fas,.btn-secondery i.fas {
-    margin-left: 15px;
+    margin-left: 1.5rem;
 }
 .btn-primary:hover {
     background-color: #fff;
@@ -36,36 +40,37 @@ section {
     text-decoration: none;
     text-align: right;
     color: #1e44f0;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
-    margin-top: 3rem;
+    margin-top: 4.8rem;
 }
 .section-title {
     color: #3A3A3A;
-    font-size: 32px;
+    font-size: 3.2rem;
     text-align: center;
-    margin: 2.5rem 0 2rem;
+    margin: 4rem 0 3.2rem;
 }
 /* utilities end */
 
 
 
+
 /* header start */
 header {
-    padding: 1rem 5%;
+    padding: 1.6rem 5rem;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.233);
+    box-shadow: 0 .4rem 1rem rgba(0, 0, 0, 0.233);
     position: sticky;
     top: 0;
     left: 0;
 }
 .logo {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 900;
     color: #363535;
-    margin: 10px 0;
+    margin: 1rem 0;
 }
 nav ul {
     list-style: none;
@@ -73,7 +78,7 @@ nav ul {
 }
 nav li {
     display: inline-block;
-    margin-left: 2rem;
+    margin-left: 3.2rem;
     cursor: pointer;
 }
 nav li:hover,a:hover {
@@ -82,11 +87,11 @@ nav li:hover,a:hover {
 nav a {
     text-decoration: none;
     display: inline-block;
-    font-size: 1.3rem;
+    font-size: 2rem;
     color: #000;
 }
 nav i.fas {
-    font-size: 1.1rem;
+    font-size: 1.77rem;
 }
 /* header end */
 
@@ -94,23 +99,23 @@ nav i.fas {
 /* home start */
 .home {
     background-color: #1e44f01a;
-    padding: 4rem 8%;
+    padding: 6.4rem 10rem;
     justify-content: space-between;
     align-items: center;
 }
 .home-text h1 {
-    width: 550px;
-    font-size: 52px;
+    width: 55rem;
+    font-size: 5.2rem;
     font-weight: 900;
-    line-height: 70px;
+    line-height: 7rem;
     margin: 0;
 }
 .home-text p {
-    width: 600px;
-    font-size: 16px;
+    width: 60rem;
+    font-size: 1.6rem;
     font-weight: 400;
-    line-height: 24px;
-    margin: 1.7rem 0;
+    line-height: 2.4rem;
+    margin: 2.7rem 0;
 }
 .home-image:hover img {
     transform: rotate(5deg) scale(1.1);
@@ -123,65 +128,65 @@ nav i.fas {
 .collections {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 2rem;
+    grid-gap: 3.2rem;
 }
 
 .collection {
-    padding: 1rem;
-    box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.411);
+    padding: 1.6rem;
+    box-shadow: 0 0 1.5rem rgba(128, 128, 128, 0.411);
 }
 .collection h3 {
-    font-size: 28px;
+    font-size: 2.8rem;
     color: #18191F;
-    margin: 1rem 0;
+    margin: 1.6rem 0;
 }
 .collection .price {
-    font-size: 24px;
-    margin: 1rem 0;
+    font-size: 2.4rem;
+    margin: 1.6rem 0;
 }
 .collection .rating i {
     color: #ffae00;
 }
 .collection .rating span {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     color: #5E6366;
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 .collection .about {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
     color: #787885;
-    margin: 0 0 5px;
+    margin: 0 0 .5rem;
 }
 /* collections end */
 
 
 /* bonus start */
 .cta {
-    padding: 4rem 8%;
+    padding: 6.4rem 5rem;
     background: url(images/pic-8.jpg) no-repeat;
     background-size: cover;
 }
 .cta-title {
     color: #fff;
-    font-size: 5rem;
+    font-size: 7rem;
     font-style: italic;
     font-weight: 900;
-    letter-spacing: 0.7rem;
+    letter-spacing: 1.12rem;
     text-transform: capitalize;
-    margin: 0 0 1.5rem;
+    margin: 0 0 2.4rem;
 }
 .cta-title span {
     color: #ffffff70;
 }
 .cta textarea,input:not(:last-child) {
     display: block;
-    width: 650px;
-    padding: 14px 10px;
-    margin-bottom: 2rem;
+    width: 65rem;
+    padding: 1.4rem 1rem;
+    margin-bottom: 3.2rem;
     background-color: #ffffff10;
-    border: 2px solid #ffffff;
+    border: .2rem solid #ffffff;
     outline: none;
     color: #fff;
     font-style: italic;
@@ -193,18 +198,18 @@ nav i.fas {
     display: inline-block;
     background-color: #ffffff10;
     color: #fff;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     font-style: italic;
-    padding: 1rem 3rem;
-    border: 2px solid #fff;
-    border-radius: 100px;
+    padding: 1.6rem 4.8rem;
+    border: .2rem solid #fff;
+    border-radius: 10rem;
     cursor: pointer;
 }
 .submit-btn:hover {
     background-color: #1e44f0;
     color: #ffffff;
-    border: 2px solid #ffffff;
+    border: .2rem solid #ffffff;
     transition: .3s;
 }
 /* bonus end */
@@ -212,23 +217,26 @@ nav i.fas {
 
 /* footer start */
 footer {
-    padding: 2rem 0;
+    padding: 3.2rem 0;
     background-color: #1e44f0;
     color: #fff;
     text-align: center;
 }
 footer h2 {
-    font-size: 24px;
+    font-size: 2.4rem;
+}
+footer p {
+    font-size: 1.4rem;
 }
 .social-links a {
     color: #fff;
 }
 .social-links i.fab {
-    font-size: 24px;
-    padding: 14px;
+    font-size: 2.4rem;
+    padding: 1.4rem;
     background-color: #6b6a6a;
-    border-radius: 100px;
-    margin: 5px;
+    border-radius: 10rem;
+    margin: .5rem;
     transition: .3s ease-in;
 }
 .social-links i.fab:hover {
@@ -238,10 +246,21 @@ footer h2 {
 /* footer end */
 
 
-/*  tablet device start */
-/*  tablet devices end */
 
 
-/*  mobile device start */
-/*  mobile devices end */
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575.98px) { ... } */
+
+/* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) and (max-width: 767.98px) { ... } */
+
+/* Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) and (max-width: 991.98px) { ... } */
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+
+
 
