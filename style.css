@@ -119,7 +119,7 @@ nav i.fas {
 }
 .home-image:hover img {
     transform: rotate(5deg) scale(1.1);
-    transition: .3s ease-in;
+    transition: .4s ease-in;
 }
 /* home end */
 
@@ -129,6 +129,7 @@ nav i.fas {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 3.2rem;
+    justify-content: center;
 }
 
 .collection {
@@ -246,20 +247,92 @@ footer p {
 /* footer end */
 
 
-
-
-
-/* Extra small devices (portrait phones, less than 576px) */
-/* @media (max-width: 575.98px) { ... } */
-
 /* Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) and (max-width: 767.98px) { ... } */
+@media (min-width: 360px) and (max-width: 768px) {
+    html {
+        font-size: 30%;
+    }
+    .logo {
+        font-size: 4rem;
+    }
+    nav {
+        display: none;
+    }
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .home-image img {
+        width: 90%;
+    }
+    .popular-collection {
+        justify-content: center;
+    }
+    .collections {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta {
+        text-align: center;
+    }
+    .cta form input,textarea {
+        margin: 0 auto 4rem;
+    }
+
+    footer h2 {
+        font-size: 4rem;
+        letter-spacing: .7rem;
+        margin: 0 auto 2rem;
+    }
+    footer p {
+        font-size: 2rem;
+    }
+    footer a {
+        margin: 1rem;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) and (max-width: 991.98px) { ... } */
+@media (min-width: 768px) and (max-width: 992px) {
+    html {
+        font-size: 40%;
+    }
+    header,.home {
+        box-sizing: border-box;
+    }
+    .home-image img {
+        width: 100%;
+    }
+    .collections {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+@media (min-width: 992px) and (max-width: 1200px) {
+    html {
+        font-size: 60%;
+    }
+    header {
+        box-sizing: border-box;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    nav li {
+        margin-left: 2rem;
+    }
+    .home-image img {
+        width: 100%;
+    }
+    .popular-collection {
+        justify-content: center;
+        padding: 3rem 4rem;
+    }
+}
 
 
 
